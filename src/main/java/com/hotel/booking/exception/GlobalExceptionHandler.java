@@ -22,4 +22,14 @@ public class GlobalExceptionHandler {
         );
     }
 
+    @ExceptionHandler(DuplicateResourceException.class)
+    public ResponseEntity<ErrorResponse> handleDuplicateResource(ResourceNotFoundException ex
+            , HttpServletRequest req) {
+
+        log.info("Duplicate Resource {}: {}" , req.getRequestURI(), ex.getMessage());
+
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(
+                new ErrorResponse(409, "Duplicate Resource", ex.getMessage())
+        );
+    }
 }
