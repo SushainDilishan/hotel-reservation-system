@@ -1,7 +1,7 @@
 package com.hotel.booking.controller;
 
 import com.hotel.booking.domain.Room;
-import com.hotel.booking.dto.response.CreateRoomRequest;
+import com.hotel.booking.dto.request.CreateRoomRequest;
 import com.hotel.booking.dto.response.RoomResponse;
 import com.hotel.booking.service.RoomService;
 import jakarta.validation.Valid;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/rooms")
+@RequestMapping("/api/v1/rooms")
 @RequiredArgsConstructor
 public class RoomController {
 
