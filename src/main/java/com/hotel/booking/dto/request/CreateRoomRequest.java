@@ -1,4 +1,4 @@
-package com.hotel.booking.dto.response;
+package com.hotel.booking.dto.request;
 
 import com.hotel.booking.domain.RoomType;
 import jakarta.validation.constraints.*;

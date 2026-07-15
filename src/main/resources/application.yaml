@@ -16,3 +16,10 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+
+keycloak:
+  admin:
+    client-id: user-provisioning-client
+    client-secret: ZYMOWfIniS5uJ7N727JP5p5UZzYr7bRC
+    realm: hotel-booking
+    server-url: http://localhost:9001

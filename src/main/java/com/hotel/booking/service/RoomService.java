@@ -1,7 +1,7 @@
 package com.hotel.booking.service;
 
 import com.hotel.booking.domain.Room;
-import com.hotel.booking.dto.response.CreateRoomRequest;
+import com.hotel.booking.dto.request.CreateRoomRequest;
 import com.hotel.booking.exception.DuplicateResourceException;
 import com.hotel.booking.exception.ResourceNotFoundException;
 import com.hotel.booking.repository.RoomRepository;
